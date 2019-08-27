@@ -19,5 +19,5 @@ library(gapminder)
 Here we examine the famous and cool life expectancy plot
 
 # Analysis
-
+    
 
