@@ -1,0 +1,23 @@
+---
+title: "Life Expectancy Analysis"
+author: "Richard Ressler"
+date: "8/27/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r echo=FALSE}
+library(gapminder)
+```
+
+# Abstract
+
+Here we examine the famous and cool life expectancy plot
+
+# Analysis
+
+
