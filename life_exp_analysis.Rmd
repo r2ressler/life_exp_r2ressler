@@ -18,7 +18,7 @@ data("gapminder")
 
 # Abstract
 
-Here we examine the famous and cool life expectancy plot
+Here we examine the famous and cool life expectancy plot we will first clean the data
 
 # Life Expectancy Analysis
     cc
@@ -36,3 +36,10 @@ gapminder_unfiltered %>%
 view(sum_data)
 
 ```
+
+We will now recreate the plot
+
+```{r}
+
+```
+
