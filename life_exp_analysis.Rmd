@@ -11,13 +11,24 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r echo=FALSE}
-library(gapminder)
+
+library(tidyverse)
+data("gapminder")
 ```
 
 # Abstract
 
 Here we examine the famous and cool life expectancy plot
 
-# Analysis
-    
-
+# Life Expectancy Analysis
+    cc
+```{r}
+str(gapminder_unfiltered)
+```
+```{r}
+gapminder_unfiltered %>% 
+  group_by(year) %>% 
+  filter(lifeExp == max(lifeExp)) %>% 
+  select(country, lifeExp, year) %>% 
+  arrange(year) ->
+  sum_data
