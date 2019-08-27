@@ -31,4 +31,8 @@ gapminder_unfiltered %>%
   filter(lifeExp == max(lifeExp)) %>% 
   select(country, lifeExp, year) %>% 
   arrange(year) ->
-  sum_data
+ sum_data
+
+view(sum_data)
+
+```
