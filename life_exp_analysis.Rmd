@@ -40,6 +40,7 @@ view(sum_data)
 We will now recreate the plot
 
 ```{r}
-
+sum_data %>% ggplot(aes(x=year, y= lifeExp, color = country)) +
+  geom_point()
 ```
 
