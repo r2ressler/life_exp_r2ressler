@@ -11,8 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r echo=FALSE}
-
 library(tidyverse)
+library(gapminder)
 data("gapminder")
 ```
 
@@ -40,7 +40,9 @@ view(sum_data)
 We will now recreate the plot
 
 ```{r}
-sum_data %>% ggplot(aes(x=year, y= lifeExp, color = country)) +
-  geom_point()
+sum_data %>% ggplot(aes(x=year, y= lifeExp)) +
+  geom_point(aes(color = country)) +
+  geom_point(shape = 1) +
+  geom_smooth(method = "lm", se = FALSE)
 ```
 
